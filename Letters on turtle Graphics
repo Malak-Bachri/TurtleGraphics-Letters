@@ -1,0 +1,433 @@
+echo "# TurtleGraphics-Letters" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Malak-Bachri/TurtleGraphics-Letters.git
+git push -u origin main
+
+#This is a very raw code, it definitely needs more polishing.
+import turtle
+#You can enter any word, but only the letters will be drawn (no special characters or numbers)
+word = input("Enter a word: ").upper()
+
+t = turtle.Turtle()
+
+
+for letter in word:
+
+    if letter == 'A':
+        t.pendown()
+        t.setheading(70)  # A
+        t.forward(50)
+        t.setheading(110)
+        t.backward(20)
+        t.setheading(180)
+        t.forward(15)
+        t.backward(15)
+        t.setheading(110)
+        t.backward(30)
+        t.penup()
+        t.setheading(180)
+        t.bk(25)
+        t.setheading(0)
+    elif letter == 'B':
+        t.pendown()
+        t.setheading(90)  # B
+        t.forward(50)
+        t.setheading(0)
+        t.forward(30)
+        t.setheading(-90)
+        t.forward(25)
+        t.setheading(-180)
+        t.forward(30)
+        t.setheading(0)
+        t.forward(35)
+        t.setheading(-90)
+        t.forward(25)
+        t.setheading(-180)
+        t.forward(35)
+        t.bk(35)
+        t.penup()
+        t.bk(25)
+        t.setheading(0)
+    elif letter == 'C':     #C
+        t.pendown()
+        t.fd(35)
+        t.bk(35)
+        t.left(90)
+        t.fd(37.5)
+        t.right(90)
+        t.fd(35)
+        t.penup()
+        t.right(90)
+        t.forward(37.5)
+        t.left(90)
+        t.fd(25)
+    elif letter == 'D':
+        t.pendown()
+        t.setheading(90)
+        t.fd(50)
+        t.left(90)
+        t.fd(7.5)
+        t.bk(37.5)
+        t.left(120)
+        t.fd(7.5)
+        t.right(28)
+        t.fd(40)
+        t.right(60)
+        t.fd(7.5)
+        t.right(32)
+        t.fd(37.5)
+        t.penup()
+        t.bk(65)
+        t.setheading(0)
+
+
+    elif letter == 'E':  # E
+        t.pendown()
+        t.fd(35)
+        t.bk(35)
+        t.left(90)
+        t.fd(25)
+        t.right(90)
+        t.fd(30)
+        t.bk(30)
+        t.left(90)
+        t.fd(25)
+        t.right(90)
+        t.fd(35)
+        t.penup()
+        t.right(90)
+        t.fd(50)
+        t.left(90)
+        t.fd(25)
+
+
+    elif letter == 'F':
+        t.pendown()
+        t.left(90)
+        t.fd(30)
+        t.left(90)
+        t.bk(25)
+        t.fd(25)
+        t.right(90)
+        t.fd(20)
+        t.right(90)
+        t.bk(5)
+        t.fd(35)
+        t.penup()
+        t.left(90)
+        t.bk(50)
+        t.right(90)
+        t.fd(15)
+
+
+    elif letter == 'G':  #G
+        t.pendown()
+        t.fd(35)
+        t.bk(35)
+        t.left(90)
+        t.fd(37.5)
+        t.right(90)
+        t.fd(35)
+        t.penup()
+        t.right(90)
+        t.fd(37.5)
+        t.pendown()
+        t.bk(15)
+        t.right(90)
+        t.fd(20)
+        t.bk(30)
+        t.penup()
+        t.left(90)
+        t.fd(15)
+        t.left(90)
+        t.forward(30)
+
+
+    elif letter =='H':   #H
+        t.pendown()
+        t.left(90)
+        t.fd(50)
+        t.bk(25)
+        t.right(90)
+        t.fd(25)
+        t.left(90)
+        t.fd(25)
+        t.bk(50)
+        t.penup()
+        t.right(90)
+        t.fd(30)
+
+
+
+    elif letter == 'I':  # I
+        t.pendown()
+        t.left(90)
+        t.fd(50)
+        t.bk(50)
+        t.penup()
+        t.right(90)
+        t.fd(30)
+
+
+
+    elif letter =='J':   #J
+        t.pendown()
+        t.left(90)
+        t.fd(50)
+        t.right(90)
+        t.fd(10)
+        t.bk(20)
+        t.fd(10)
+        t.right(90)
+        t.fd(60)
+        t.right(90)
+        t.fd(20)
+        t.right(90)
+        t.fd(20)
+        t.penup()
+        t.bk(10)
+        t.right(90)
+        t.fd(50)
+
+    elif letter == 'K':
+        t.pendown()
+        t.setheading(90)  # K
+        t.forward(50)
+        t.backward(20)
+        t.setheading(50)
+        t.forward(25)
+        t.backward(25)
+        t.setheading(120)
+        t.backward(35)
+        t.penup()
+        t.right(120)
+        t.fd(25)
+    elif letter == 'L':
+        t.pendown()
+        t.setheading(90)  # L
+        t.forward(50)
+        t.backward(50)
+        t.setheading(0)
+        t.forward(25)
+        t.penup()
+        t.fd(25)
+    elif letter == 'M':
+        t.pendown()
+        t.setheading(90)  # M
+        t.forward(50)
+        t.setheading(120)
+        t.backward(35)
+        t.setheading(60)
+        t.forward(35)
+        t.setheading(90)
+        t.backward(50)
+        t.penup()
+        t.right(90)
+        t.fd(30)
+
+
+    elif letter =='N' :     #N
+        t.pendown()
+        t.setheading(90)  # M
+        t.forward(50)
+        t.setheading(122)
+        t.backward(58)
+        t.setheading(91)
+        t.forward(50)
+        t.bk(50)
+        t.penup()
+        t.setheading(0)
+        t.fd(30)
+
+
+    elif letter == 'O' :    #O
+        t.fd(10)
+        t.pendown()
+        t.circle(25)
+        t.penup()
+        t.fd(50)
+
+
+    elif letter == 'P':    #P
+        t.pendown()
+        t.setheading(90)
+        t.fd(50)
+        t.right(90)
+        t.fd(30)
+        t.right(90)
+        t.fd(20)
+        t.right(90)
+        t.fd(30)
+        t.penup()
+        t.left(90)
+        t.fd(30)
+        t.left(90)
+        t.fd(60)
+
+
+    elif letter == 'Q':         #Q
+        t.fd(10)
+        t.pendown()
+        t.circle(25)
+        t.penup()
+        t.setheading(90)
+        t.fd(20)
+        t.pendown()
+        t.right(120)
+        t.fd(50)
+        t.penup()
+        t.setheading(70)
+        t.fd(5)
+        t.right(88)
+        t.fd(10)
+
+
+
+    elif letter == 'R':     #R
+        t.pendown()
+        t.setheading(90)
+        t.fd(50)
+        t.right(90)
+        t.fd(30)
+        t.right(90)
+        t.fd(20)
+        t.right(90)
+        t.fd(30)
+        t.left(140)
+        t.fd(45)
+        t.penup()
+        t.left(40)
+        t.fd(20)
+
+
+    elif letter == 'S':     #S
+        t.pendown()
+        t.fd(25)
+        t.left(90)
+        t.fd(25)
+        t.left(90)
+        t.fd(25)
+        t.right(90)
+        t.fd(20)
+        t.right(90)
+        t.fd(25)
+        t.penup()
+        t.right(90)
+        t.fd(45)
+        t.left(90)
+        t.fd(25)
+
+
+    elif letter == 'T':         #T
+        t.pendown()
+        t.setheading(90)
+        t.fd(50)
+        t.right(90)
+        t.fd(20)
+        t.bk(40)
+        t.penup()
+        t.fd(20)
+        t.right(90)
+        t.fd(50)
+        t.left(90)
+        t.fd(35)
+
+
+    elif letter == 'U':         #U
+        t.pendown()
+        t.setheading(90)
+        t.fd(50)
+        t.bk(50)
+        t.right(90)
+        t.fd(30)
+        t.left(90)
+        t.fd(50)
+        t.bk(50)
+        t.penup()
+        t.right(90)
+        t.fd(25)
+
+
+    elif letter == 'V':         #V
+        t.fd(10)
+        t.pendown()
+        t.setheading(120)
+        t.fd(50)
+        t.bk(50)
+        t.right(50)
+        t.fd(50)
+        t.bk(50)
+        t.penup()
+        t.setheading(0)
+        t.fd(35)
+
+
+    elif letter == 'W':         #W
+        t.fd(10)
+        t.pendown()
+        t.setheading(120)
+        t.fd(50)
+        t.bk(50)
+        t.right(50)
+        t.fd(50)
+        t.right(140)
+        t.fd(50)
+        t.left(135)
+        t.fd(50)
+        t.bk(50)
+        t.penup()
+        t.setheading(0)
+        t.fd(35)
+
+
+    elif letter == 'X':       #X
+        t.pendown()
+        t.left(60)
+        t.fd(50)
+        t.penup()
+        t.bk(50)
+        t.right(60)
+        t.fd(20)
+        t.pendown()
+        t.left(120)
+        t.fd(50)
+        t.bk(50)
+        t.penup()
+        t.right(110)
+        t.fd(25)
+
+
+
+    elif letter == 'Y':     #Y
+        t.pendown()
+        t.left(60)
+        t.fd(50)
+        t.bk(30)
+        t.left(50)
+        t.fd(30)
+        t.penup()
+        t.bk(30)
+        t.right(160)
+        t.fd(28)
+        t.left(60)
+        t.fd(10)
+
+
+    elif letter == 'Z':      #Z
+        t.pendown()
+        t.fd(30)
+        t.bk(30)
+        t.left(60)
+        t.fd(50)
+        t.left(120)
+        t.fd(30)
+
+
+turtle.done()
+
+
+
+
